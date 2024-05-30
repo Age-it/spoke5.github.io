@@ -1764,9 +1764,6 @@ h6 {
   color: #fff; /* Mantieni il colore del testo uguale */
 }
 
-
-
-
 .btn:hover {
   background-color: #eb3f33;
 }
@@ -1777,4 +1774,19 @@ h6 {
   height: auto;
   object-fit: cover;
   aspect-ratio: 1 / 1; /* Assicurati che tutte le immagini siano quadrate */
+}
+
+
+.supporter-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px; /* Aggiungi un po' di padding per un margine interno */
+}
+
+.supporter-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Assicura che l'immagine si adatti al contenitore senza deformarsi */
 }
