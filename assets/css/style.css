@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: #f71a42;
   outline: none;
   text-decoration: none;
 }
@@ -87,7 +87,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #f71a42;
   color: #fff;
 }
 
@@ -478,7 +478,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/foto-uni-termoli.jpg) top center;
+  background: url(../img/SedeTermoli.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -549,18 +549,25 @@ h6 {
     font-size: 16px;
   }
 }
+.position-relative {
+  position: relative;
+}
 
-#hero .play-btn {
+
+
+.play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#eb3f33 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
-  display: block;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
-#hero .play-btn::after {
+.play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -575,7 +582,7 @@ h6 {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-#hero .play-btn:before {
+.play-btn:before {
   content: "";
   position: absolute;
   width: 120px;
@@ -593,12 +600,12 @@ h6 {
   background: rgba(198, 16, 0, 0);
 }
 
-#hero .play-btn:hover::after {
+.play-btn:hover::after {
   border-left: 15px solid #eb3f33;
   transform: scale(20);
 }
 
-#hero .play-btn:hover::before {
+.play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1153,7 +1160,7 @@ h6 {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #e0072f;
+  color: #f94a6a;
   transition: 0.3s;
 }
 
@@ -1315,7 +1322,7 @@ h6 {
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #f94a6a;
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1334,7 +1341,7 @@ h6 {
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+  background-color: #f94a6a;
 }
 
 /*--------------------------------------------------------------
@@ -1403,7 +1410,7 @@ h6 {
 #contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #f94a6a;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1472,7 +1479,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit]:hover {
-  background: #e0072f;
+  background: #f94a6a;
 }
 
 @keyframes animate-loading {
@@ -1625,7 +1632,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit]:hover {
-  background: #e0072f;
+  background: #f94a6a;
 }
 
 #footer .copyright {
@@ -1748,10 +1755,26 @@ h6 {
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
+  cursor: pointer; /* Opzionale, mantiene il puntatore a mano */
 }
+
+/* Assicurati di rimuovere o sovrascrivere qualsiasi regola di hover */
+.btn-tremiti:hover {
+  background-color: #eb3f33; /* Mantieni il colore di sfondo uguale per rimuovere l'effetto hover */
+  color: #fff; /* Mantieni il colore del testo uguale */
+}
+
+
+
 
 .btn:hover {
   background-color: #eb3f33;
 }
 
 
+.venue-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* Assicurati che tutte le immagini siano quadrate */
+}
