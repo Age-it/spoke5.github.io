@@ -1790,3 +1790,36 @@ h6 {
   max-height: 100%;
   object-fit: contain; /* Assicura che l'immagine si adatti al contenitore senza deformarsi */
 }
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.venue-gallery {
+  position: relative;
+}
+
+.venue-gallery:hover .caption {
+  opacity: 1;
+}
+
+/* Stile per la didascalia nella lightbox */
+.glightbox-container .gdesc-inner {
+  color: #fff !important; /* Testo bianco */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; /* Centrare il testo */
+  max-width: 90%; /* Assicurati che il testo non si estenda oltre i bordi */
+  margin: 0 auto; /* Centra il blocco */
+}
+
+
